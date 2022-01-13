@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/697c2c5344.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <title>Resume</title>
+</head>
+<body class="bg-white">
+    <!-- nav start-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-lg">
+          <a class="navbar-brand" href="#">My Resume</a>
+          <h3><%= CurrentTime %></h3>
+
+            <div class="dropdown">
+                <!--change button color-->
+            <button class="btn btn-secondary btn-danger w3-spin" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!--dropdown menu, menu position-->
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#home">Personal info</a></li>
+              <li><a class="dropdown-item" href="#education">Education</a></li>
+              <li><a class="dropdown-item" href="#Tech-Skills">Technical Skills</a></li>
+              <li><a class="dropdown-item" href="#Soft-Skills">Soft Skills</a></li>
+              <li><a class="dropdown-item" href="#">Admin</a></li>
+            </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- nav end-->
+
+    <!--Home start-->
+
+    <section class="home w3-animate-zoom" id="home">
+        <div class="container-lg mt-5">
+            <div class="row min-vh-95 align-items-centre">
+                <div class="col-md-6">
+                    <div class="home-img text-center"><img class="rounded-circle" src="img/comfy.jpg" alt="" width="300" height="300"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="home-text mt-5">
+                        <h3>Full name: Lorem, ipsum.</h3>
+                        <h3>Date of birth: DD:MM:YY</h3>
+                        <h3>Place of residence: Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr style="width: 58%; margin: 0 auto; margin-top: 1.5rem;">
+
+    <!--Home end-->
+
+
+    <!--education start-->
+
+    <section class="education w3-animate-right" id="education">
+        <div class="container-lg mt-5">
+            <div class="row min-vh-95 align-items-centre">
+
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li><h4>Programming</h4></li>
+                    <li><h4>Front-end</h4></li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--education end-->
+
+
+    <!--Technical skills start-->
+
+    <section class="TechnicalSkills w3-animate-left" id="Tech-Skills">
+        <div class="container-lg mt-5">
+            <div class="row min-vh-95 align-items-centre">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li><h4>Programming</h4></li>
+                    <li><h4>Front-end</h4></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Technical skills end-->
+
+    <!--Soft skills start-->
+
+    <section class="SoftSkills w3-animate-right" id="Soft-Skills">
+        <div class="container-lg mt-5">
+            <div class="row min-vh-95 align-items-centre">
+
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li><h4>Time management</h4></li>
+                    <li><h4>Creative thinking</h4></li>
+                    <li><h4>Teamwork</h4></li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Soft skills end-->
+
+    <footer class="footer py-3 border-top">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center text-muted"> Egert Arr &#169; 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
