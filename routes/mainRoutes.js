@@ -4,4 +4,6 @@ const router = express.Router();
 
 router.get('/', mainController.getMainPage);
 
+router.get('/admin', mainController.getAdmin);
+
 module.exports = router;
