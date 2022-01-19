@@ -4,3 +4,9 @@
 .container input {
     display: block; margin: 0 auto; margin-bottom: 1rem;
 }
+
+@media (min-width: 568px) {
+    .dropdown {
+        padding-right: 0.5rem;
+    }
+}

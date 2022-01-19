@@ -13,7 +13,10 @@ exports.getMainPage = (request,response)=>{
 }
 
 exports.getAdmin = (request,response)=>{
-        response.render('admin');
+        Data.fetchData(dataFromFile =>{
+                console.log(dataFromFile);
+                response.render('admin',{myData: dataFromFile[0]});
+        })
 }
 
 exports.postData = (req, res) => {

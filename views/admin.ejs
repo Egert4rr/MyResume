@@ -11,14 +11,14 @@
     <div class="container" style="text-align: center;">
         <h1>Update info</h1>
         <form action="/admin" method="POST" enctype="multipart/form-data">
-        <input type="text" name="fullName" placeholder="enter Full name">
-        <input type="date" name="dateOfbirth" placeholder="enter date of birth">
-        <input type="text" name="placeOfresidence" placeholder="enter place of residence">
-        <input type="text" name="schools" placeholder="enter Schools">
-        <input type="text" name="technicalSkills" placeholder="enter technical skills">
-        <input type="text" name="softSkills" placeholder="enter soft skills">
-        <input type="file" name="image" placeholder="insert image">
-        <button type="submit">Submit</button>
+            <input type="text" name="fullName" placeholder="enter your full name" value="<%=myData.fullName %>">
+            <input type="date" name="dateOfbirth" placeholder="enter your date of birth">
+            <input type="text" name="placeOfresidence" placeholder="enter your place of residence" value="<%=myData.placeOfresidence %>">
+            <input type="text" name="schools" placeholder="enter your school" value="<%=myData.schools %>">
+            <input type="text" name="technicalSkills" placeholder="enter your technical skills" value="<%=myData.technicalSkills %>">
+            <input type="text" name="softSkills" placeholder="enter your soft skills" value="<%=myData.softSkills %>">
+            <input type="file" name="image" placeholder="insert image">
+            <button type="submit">Submit</button>
         </form>
         <a href="/">Back to main</a>
     </div>
