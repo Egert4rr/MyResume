@@ -1,0 +1,6 @@
+.container {
+    text-align: center;
+}
+.container input {
+    display: block; margin: 0 auto; margin-bottom: 1rem;
+}

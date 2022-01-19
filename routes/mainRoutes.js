@@ -6,4 +6,6 @@ router.get('/', mainController.getMainPage);
 
 router.get('/admin', mainController.getAdmin);
 
+router.post('/admin', mainController.postData)
+
 module.exports = router;

@@ -4,9 +4,13 @@ const path = require('path')
 const FilePath = path.join(path.dirname(require.main.filename), 'data', 'data.json')
 
 module.exports = class Data {
-    constructor(wish, imgUrl){
-        this.description = wish
-        this.imgUrl = imgUrl
+    constructor(fullName, dateOfbirth,placeOfresidence,schools,technicalSkills,softSkills){
+        this.fullName = fullName
+        this.dateOfbirth = dateOfbirth
+        this.placeOfresidence = placeOfresidence
+        this.schools = schools
+        this.technicalSkills = technicalSkills
+        this.softSkills = softSkills
     }
 
     saveData(){
@@ -15,13 +19,13 @@ module.exports = class Data {
             let datalist = [];
 
             if (!error) {
-                datalist = JSON.parse(fileContent)                
+                datalist.push(this)//newWish.saveWish()
+                //datalist = JSON.parse(fileContent)                
             }
             else {
                 console.log(error);
             }
-            datalist.push(this)//newWish.saveWish()
-
+            
             fs.writeFile(FilePath, JSON.stringify(datalist),(error)=>{
                 if (!error) {
                     console.log('data saved');
